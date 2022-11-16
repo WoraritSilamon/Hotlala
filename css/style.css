@@ -135,9 +135,9 @@ hr{
 
 
 .line{
- height: 10px;
+ height: 1px;
  background: rgb(34, 34, 34);
- width: 80%;
+ width:90%;
 
 
 }
@@ -169,7 +169,7 @@ section main{
 }
 
 .box{
-  background: rgb(180, 138, 138);
+  background: rgba(252, 249, 249, 0.281);
   height: 250px;
   
 }
