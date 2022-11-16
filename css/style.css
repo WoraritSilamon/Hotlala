@@ -1,0 +1,254 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100%;
+  background: #ffffff;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transition: .5s ease;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+  justify-content: center;
+}
+
+.logo .icon{
+  display: none;
+}
+
+.logo .menu-icon {
+  color: #333;
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.logo .logo-name {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+}
+nav .sidebar {
+
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+
+}
+nav.open .sidebar {
+  left: 0;
+}
+
+
+
+
+
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+}
+.sidebar-content .list {
+  list-style: none;
+  
+
+
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  width: 220px;
+
+}
+.lists .nav-link:hover {
+  background-color: #4070f4;
+}
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+}
+.nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+} */
+
+
+h1{
+padding-left: 20px;  
+padding-top: 120px;
+font-size: 230%;
+}
+hr{
+ 
+ 
+  background: rgb(245, 3, 3);
+  
+  
+}
+
+
+.line{
+ height: 10px;
+ background: rgb(34, 34, 34);
+ width: 80%;
+
+
+}
+
+section.container{
+  position: absolute;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 100%;
+
+  background: rgb(224, 224, 224);
+  transition: .5s ease;
+}
+
+.logo-res{
+  padding: 20px;
+  display: none;
+  font-size: 22px;
+}
+
+section main{
+  padding: 20px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: flex-start;
+  gap: 20px;
+
+}
+
+.box{
+  background: rgb(180, 138, 138);
+  height: 250px;
+  
+}
+
+
+
+
+
+  
+@media screen and (max-width: 1024px) {
+
+  nav .logo{
+    justify-content: space-between;
+  }
+
+  .logo .icon{
+    display: block;
+  }
+
+  nav{
+    left: -260px;
+  }
+
+  nav.open { 
+    left: 0px;
+
+    
+   }
+
+   .logo-res{
+    display: block;
+   }
+
+
+
+  section.container{
+
+   
+    left: 0;
+    width: 100%;
+    height: 100%;
+ 
+  
+  }
+
+  
+    section main{
+      padding: 20px;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      align-content: flex-start;
+      gap: 20px;
+
+    }
+
+}
+  
+@media screen and (min-width: 200px) {
+  .sidebar .sidebar-content { 
+      width: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hr { 
+      width: 100%;
+  }
+}
+  
+@media screen and (min-width: 200px) {
+ .hr { 
+      width: 40%;
+  }
+
+
+
+ 
+}
+
+
+
