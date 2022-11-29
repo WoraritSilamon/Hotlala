@@ -123,8 +123,10 @@ nav.open .sidebar {
 
 
 h1{
-padding-left: 20px;  
-padding-top: 120px;
+padding-left: 190px;  
+padding-top: 100px;
+padding-bottom: auto;
+margin-bottom: 120px;
 font-size: 200%;
 }
 hr{
@@ -182,7 +184,7 @@ section main{
 
 .box{
   background: rgba(255, 255, 255, 0);
-  height: 250px;
+  height: 300px;
 
   
 }
@@ -262,6 +264,11 @@ section main{
       width: 40%;
   }
  
+  @media screen and (min-width: 800px) and (max-width: 1200px) {
+    section main {
+    font-size: 14pt;
+    }
+    }
 
 
 /* Menu */

@@ -1,139 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu อาหารจานเดียว</title>
+    <title>Pos</title>
+    <!-- link to css -->
     <link rel="stylesheet" href="css/style1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/04158e9780.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/641/641850.png">
-    <link
-    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-    rel="stylesheet"
-  />
+    <!-- Box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-    <nav>
- 
-    
-        <div class="sidebar">
-          <div class="logo">
-            <span class="logo-name">POS</span>
-            <i class="bx bx-menu menu-icon icon"></i>
-          </div>
-  
-          <div class="sidebar-content">
-            <ul class="lists">
-              <li class="list">
-                <a href="#" class="nav-link">
-                  <i class="bx bx-home-alt icon"></i>
-                  <span class="link">Home</span>
-                </a>
-              </li>
-              <li class="list">
-                <a href="#" class="nav-link">
-                  <i class='bx bx-store-alt icon' ></i>
-                  <span class="link">Menu</span>
-                </a>
-              </li>
-              <li class="list">
-                <a href="#" class="nav-link">
-                  <i class='bx bx-money icon' ></i>
-                  <span class="link">Payment</span>
-                </a>
-              </li>
-              <li class="list">
-                <a href="#" class="nav-link">
-                  <i class='bx bx-box icon' ></i>
-                  <span class="link">Point</span>
-                </a>
-              
-              </li>
-            </ul>
-  
-            <div class="bottom-cotent">
-              <li class="list">
-                <a href="#" class="nav-link">
-                  <i class="bx bx-cog icon"></i>
-                  <span class="link">Settings</span>
-                </a>
-              </li>
-              
-              <li class="list">
-                <a href="#" class="nav-link">
-                  <i class="bx bx-log-out icon"></i>
-                  <span class="link">Logout</span>
-                </a>
-                
-              </li>
-              
+    <!-- header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+           <a href="#" class="logo">POS</a> 
+           <!-- cart icon -->
+           <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+           <!-- cart -->
+           <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- content -->
+            <div class="cart-content">
             </div>
-            
-          </div>
-          
+            <!-- total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">฿0</div>
+            </div>
+            <!-- Buybutton -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- Cart Close -->
+            <i class='bx bx-x-circle' id="close-cart" ></i>
+
+           </div>
         </div>
-        
-        
-        
-      </nav>
-
-    
-
-    <div class="container">
-        <div class="menu">
-            <div class="header">
-                <h1>อาหารจานเดียว</h1>
-                <p>อาหารจานเดียวที่ไม่ใช่อาหารตามสั่ง
-                </p>
-                <!-- แก้ -->
-               <div class="button">
-                <button type="submit">เข้าสู่ระบบ</button>
-                 
-               </div>
-               <div class="button">
-                <button type="submit">เข้าสู่ระบบ</button> 
-               </div>
-              
-                
-            
+    </header>
+    <!-- Shop -->
+    <section class="shop container">
+        <h2 class="section-title">Shop</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- box1 -->
+            <div class="product-box">
+              <img src="https://bestreviewimg.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2021/01/Pork-Leg-with-Rice.jpg" alt="" class="product-img"> 
+              <h2 class="product-title">ข้าวขาหมู</h2>
+              <span class="price">฿70</span> 
+              <i class='bx bx-shopping-bag add-cart'></i>
             </div>
-            
-            <div class="tags">
-                <div class="tag">
-                    <div class="icon"><img
-                            src="https://cdn-icons-png.flaticon.com/512/641/641850.png"
-                            alt=""></div>
-                    <div class="title">Menu</div>
-                </div>
-            </div>
-            <div class="burgers">
-
-            </div>
+            <!-- box1 -->
+            <div class="product-box">
+                <img src="https://www.uncledeng.com/wp-content/uploads/2022/05/naisai_crispy_pork_11-1000x667.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">ข้าวหมูกรอบ</h2>
+                <span class="price">฿70.50</span> 
+                <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+              <!-- box1 -->
+            <div class="product-box">
+                <img src="http://s2.thousandreason.com/thimgs/202108/04/12/1628052488991.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">ขาหมูแดง</h2>
+                <span class="price">฿50 - ฿70</span> 
+                <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+              <!-- box1 -->
+            <div class="product-box">
+                <img src="https://cdn3.th.orstatic.com/userphoto/photo/2/1ZV/00E73AF5253EBC83735FC3px.jpg" alt="" class="product-img"> 
+                <h2 class="product-title">ข้าวหน้าเป็ด</h2>
+                <span class="price">฿70</span> 
+                <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
         </div>
-        
-        <div class="orders">
-            <div class="header">
-                <h1>Orders</h1>
-                <p><span id="itemnumber">0</span> Items</p>
-            </div>
-            <div class="orderdburgers">
-
-            </div>
-            <div class="bill">
-                <div class="cash subtotal">Sub Total <span id="subtotal">$0</span></div>
-                <div class="cash tax">Tax(10%) <span id="tax">$0</span></div>
-                <div class="cash total">Total <span id="total">$0</span></div>
-                <div class="button"><button>CashOut</button></div>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-    
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>
