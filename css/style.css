@@ -184,9 +184,13 @@ section main{
 
 .box{
   background: rgba(255, 255, 255, 0);
-  height: 300px;
+  width: 285px;
+  height: 279px;
 
   
+}
+.box-center{
+  margin-left: 250px;
 }
 
 #box:target{

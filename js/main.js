@@ -1,14 +1,14 @@
-// let cartIcon =document.querySelector("#cart-icon");
-// let cart =document.querySelector(".cart");
-// let closeCart =document.querySelector("#close-cart");
+let cartIcon =document.querySelector("#cart-icon");
+let cart =document.querySelector(".cart");
+let closeCart =document.querySelector("#close-cart");
 
-// cartIcon.onclick = () => {
-//     cart.classList.add("active");
-// };
+cartIcon.onclick = () => {
+    cart.classList.add("active");
+};
 
-// cartIcon.onclick = () => {
-//     cart.classList.remove("active");
-// };
+cartIcon.onclick = () => {
+    cart.classList.remove("active");
+};
 
 //cart working js
 if (document.readyState == 'loading') {
@@ -134,6 +134,8 @@ function updateTotal(){
        total = Math.round(total *100)/100;
        
         document.getElementsByClassName("total-price")[0].innerText = "฿" + total;
+
+    document.getElementsByClassName("total-price-point")[0].innerText = "" +total;
 
     
 }
