@@ -14,7 +14,109 @@
     --main-color: #fd4646;
     --text-color: #171427;
     --bg-color: #fff;
+    --btn-color:#EF7712;
 }
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: .5s ease;
+  }
+  nav .logo {
+    display: flex;
+    align-items: center;
+    margin: 0 24px;
+    justify-content: center;
+  }
+  
+  .logo .icon{
+    display: none;
+  }
+  
+  .logo .menu-icon {
+    color: #333;
+    font-size: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+  }
+  .logo .logo-name {
+    color: #333;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  nav .sidebar {
+  
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+  
+  }
+  nav.open .sidebar {
+    left: 0;
+  }
+  
+  
+  
+  
+  
+  .sidebar .sidebar-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 16px;
+  }
+  .sidebar-content .list {
+    list-style: none;
+    
+  
+  
+  }
+  .list .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 220px;
+  
+  }
+  .lists .nav-link:hover {
+    background-color: #EF7712;
+  }
+  .nav-link .icon {
+    margin-right: 14px;
+    font-size: 25px;
+    color: #707070;
+  }
+  .nav-link .link {
+    font-size: 25px;
+    color: #707070;
+    font-weight: 400;
+  }
+  .lists .nav-link:hover .icon,
+  .lists .nav-link:hover .link {
+    color: #fff;
+  }
+
+
+
+
+
 img{
     width: 100%;
 }
@@ -51,6 +153,7 @@ header{
     font-size: 1.1rem;
     color: var(--text-color);
     font-weight: 400;
+    
 }
 #cart-icon{
     font-size: 1.8rem;
@@ -120,8 +223,8 @@ header{
 }
 .total{
     display: flex;
-    justify-content: flex-end;
-    margin-top: 1.5rem;
+    justify-content: left;
+    margin-top: 0.5rem;
     border-top: 1px solid var(--text-color);
 
 
@@ -130,16 +233,42 @@ header{
     font-size: 1rem;
     font-weight: 600;
 }
+/* total point */
+.total-point{
+  display: flex;
+  justify-content:left ;
+  margin-top: 0.5rem;
+}
+.pt{
+  font-size: 1rem;
+  font-weight: 600;
+}
+/* ............................. */
+
 .btn-buy{
     display: flex;
     margin: 1.5rem auto 0 auto;
-    padding: 12px 20px;
-    border: none;
-    background: var(--main-color);
+    padding: 12px 100px;
+    border: 2px solid;
+    border-radius: 12px;
+    background: var(--btn-color);
     color: var(--bg-color);
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+}
+.btn-cancel{
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 100px;
+  border: 2px solid #838383;
+  border-radius: 12px;
+
+  background: var(--bg-color);
+  color:#838383;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 .btn-buy:hover{
     background: var(--text-color);
@@ -158,8 +287,12 @@ header{
 .section-title{
    font-size: 1.5rem;
    font-weight: 600;
-   text-align: center; 
-   margin-bottom: 1.5rem;
+   text-align: left; 
+   margin-bottom: 9rem;
+}
+.section-title-pt{
+  text-align: right;
+  margin-bottom: 1.5rem;
 }
 
 .shop{
@@ -198,11 +331,11 @@ header{
     position: absolute;
     bottom: 0;
     right: 0;
-    background: var(--text-color);
+    background: var(--btn-color);
     color: var(--bg-color);
     padding: 10px;
     cursor: pointer;
 }
 .add-cart:hover{
-    background: hsl(249,32%,17%);
+    background: rgb(204, 65, 30);
 }
