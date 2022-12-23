@@ -1,16 +1,27 @@
+:root{
+  --main-color: #fd4646;
+  --text-color: #171427;
+  --bg-color: #fff;
+  --btn-color:#EF7712;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
   }
-  body {
+  .container{
+    width:2000px;
+    background: #ffffff;
+    min-height: 100%;
+  }
+  /* body {
     min-height: 100%;
     background: #ffffff;
     
-  }
+  } */
   nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -111,7 +122,7 @@
     top: 0;
     right: 0;
     width: 360px;
-    min-height: 100vh;
+    min-height: 10vh;
     padding: 20px;
     background: var(--bg-color);
     box-shadow: -2px 0 4px hsl(0 4% 15% /10%);
@@ -146,15 +157,25 @@
  }
 .pay{
    
-    width: 30px;
-    margin: 60px 220px;
-    
-  
+    width: 40px;
+    margin: 60px ;
+
 }
+
+.bottom-cotent {
+  margin-top: 2rem;
+}
+.bottom-cotent-h2{
+  display: flex;
+  margin-top: 2rem;
+}
+
 .cash{
   
     width: 50px;
-   margin-bottom: 100px  ;
+   margin-bottom: 50px ;
+   margin-left: 70px;
+   margin: 50px 40px 50px;
    
   
 }
@@ -162,3 +183,57 @@
   display: flex;
  
 }
+.price{
+  margin-left: 10rem;
+}
+.line{
+  margin-top: 10rem ;
+}
+.bottom-cotent-total{
+  display: flex;
+  margin-top: 4rem;
+}
+.price1{
+  margin-left: 13rem;
+}
+.btn-pay{
+  display: flex;
+    margin: 1.5rem auto 0 auto;
+    margin-top: 3rem;
+    padding: 25px 120px;
+    
+    
+    border: 2px solid;
+ 
+
+    border: none;
+
+    background: var(--btn-color);
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.section{
+
+  width: 1385px;
+  height: 100%;
+  padding-top:15%;
+  font-size:40px;
+  font-weight: bold;
+ 
+
+
+}
+
+.section-content{
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+hr{
+  margin-top: 60%;
+}
+
