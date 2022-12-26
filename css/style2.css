@@ -9,17 +9,21 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
+
+    
   }
   .container{
     width:2000px;
     background: #ffffff;
     min-height: 100%;
+
   }
-  /* body {
+  body {
     min-height: 100%;
-    background: #ffffff;
+    background-color: #e9e7e7;
+
     
-  } */
+  }
   nav {
     position: fixed;
     top: 0;
@@ -222,38 +226,53 @@
   padding-top:15%;
   font-size:40px;
   font-weight: bold;
+
+ 
+
  
 
 
 }
 
 .section-content{
-  display: block;
+display: block;
   height: 150%;
   width: 200%;
   position: relative;
+  margin-left: 20px;
+
+  
 }
 .table{
   margin: 100px 40px 40px;
   display: block;
   font-size: 30px;
+  background-color: #ffffff;
+  
+  
 }
 .table-list{
   font-size: 20px;
   border-collapse: collapse;
   margin: 25px 0px;
   min-width: 100%;
-  overflow: hidden;
+
   border-radius: 5px 5px 0 0;
+
+  
 }
 th{
 
  padding: 0 40px;
+
 }
 td{
 
   text-align: center;
   padding: 15px 0;
+
+  
+ 
 
  
 }
