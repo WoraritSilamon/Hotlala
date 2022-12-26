@@ -147,7 +147,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+
 }
 .logo{
     font-size: 1.1rem;
@@ -158,6 +158,7 @@ header{
 #cart-icon{
     font-size: 1.8rem;
     cursor: pointer;
+    
 
 }
 .cart{
@@ -251,6 +252,7 @@ header{
 }
 .total-price-point{
     margin-left: 0.5rem;
+    margin-top: 8px;
 
 }
 /* ............................. */
@@ -258,6 +260,7 @@ header{
 .btn-buy{
     display: flex;
     margin: 1.5rem auto 0 auto;
+   
     padding: 12px 100px;
 
     border: 2px solid;
